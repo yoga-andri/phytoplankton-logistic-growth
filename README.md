@@ -28,7 +28,7 @@ To **simulate or run the model directly in Excel**, please go to the sheet:
 > Only this sheet is intended for user interaction. Other sheets are used for reference or fixed data.
 
 ## ⚙️ How to Use (Python Version)
-1. Open the notebook in [Google Colab](https://colab.research.google.com/)
+1. Open the notebook in [Google Colab]([https://colab.research.google.com/](https://colab.research.google.com/github/yoga-andri/phytoplankton-logistic-growth/blob/main/phytoplankton_logistic_growth_model.ipynb))
 2. Upload the Excel file when prompted (`logistic-growth-model-fitoplankton.xlsm`)
 3. Use the slider to select light exposure duration (6 to 24 hours)
 4. The notebook will:
