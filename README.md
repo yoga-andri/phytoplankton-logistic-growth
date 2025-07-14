@@ -22,7 +22,7 @@ To **simulate or run the model directly in Excel**, please go to the sheet:
 ### ➤ `Modified Logistic Model`
 
 - Inside this sheet, you will find a labeled input area:
-# "Enter Lighting Duration Value"
+### "Enter Lighting Duration Value"
 - You can adjust this input (light duration in hours), and the spreadsheet will automatically calculate the result using built-in formulas and logic.
 
 > Only this sheet is intended for user interaction. Other sheets are used for reference or fixed data.
