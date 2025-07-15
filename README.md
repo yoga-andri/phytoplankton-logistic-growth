@@ -8,40 +8,41 @@ It is based on real experimental data collected during academic research and is 
 - Interactive visualization (slider) in Jupyter/Colab Notebook
 - Comparison with actual data from 6h, 12h, and 24h exposure
 - Error analysis using MAPE and automated interpretation to assess closeness to actual observations
-- Excel version of the model with editable input and automated logic
-- Alternative version using **inline data (no need to upload Excel)** – easy to run instantly
+- Fully functional **without needing external Excel files** (inline data is used)
+- Excel version still available for manual input and logic testing
 
 ## 📁 Files Included
 - `phytoplankton_logistic_growth_model.ipynb` – Interactive Python notebook (Jupyter/Colab)
-- `logistic-growth-model-fitoplankton.xlsm` – Source data and Excel-based model
+- `logistic-growth-model-fitoplankton.xlsm` – Optional Excel-based model
 - `README.md` – This documentation file
 
-## 🧾 Excel File Details
-The Excel file contains multiple sheets for different purposes.  
-To **simulate or run the model directly in Excel**, please go to the sheet:
+## 🧾 Excel File (Optional)
+An optional Excel version of the model is included for spreadsheet simulation.
+
+To try it:
+- Open the file `logistic-growth-model-fitoplankton.xlsm`
+- Go to the sheet:
 
 ### ➤ `Modified Logistic Model`
 
-- Inside this sheet, you will find a labeled input area:
+- Find the input labeled:
 ###    "Enter Lighting Duration Value"
-- You can adjust this input (light duration in hours), and the spreadsheet will automatically calculate the result using built-in formulas and logic.
+- Enter a value (in hours) to simulate the model
+- The spreadsheet uses built-in formulas to calculate population prediction
 
-> Only this sheet is intended for user interaction. Other sheets are used for reference or fixed data.
+> Only this sheet is intended for user input. Other sheets contain raw/reference data.
 
 ## ⚙️ How to Use (Python Version)
 
-### ▶️ Option A — With Excel Upload
-1. Open the notebook in [Google Colab](https://colab.research.google.com/github/yoga-andri/phytoplankton-logistic-growth/blob/main/phytoplankton_logistic_growth_model.ipynb)
-2. Upload the Excel file when prompted (`logistic-growth-model-fitoplankton.xlsm`)
-3. Use the slider to select light exposure duration (6 to 24 hours)
-4. The notebook will:
-   - Display the logistic growth curve
-   - Show error values (MAPE) between prediction vs actual 6h, 12h, and 24h
-   - Provide automatic interpretation of which duration the result is closest to
+✅ This notebook **does not require any external data upload**. Just open and run.
 
-### ⚡ Option B — Without Excel (Instant Run)
-You can also try the version that uses inline data directly in the code — no need to upload Excel.  
-This version is more portable and faster to test.
+### ▶️ Steps:
+1. Open the notebook in [Google Colab](https://colab.research.google.com/github/yoga-andri/phytoplankton-logistic-growth/blob/main/phytoplankton_logistic_growth_model.ipynb)
+2. Use the slider to select light exposure duration (6 to 24 hours)
+3. The notebook will:
+   - Display the logistic growth curve
+   - Show error values (MAPE) between prediction and actual data
+   - Provide interpretation of which exposure duration your prediction is closest to
 
 ---
 
@@ -51,9 +52,8 @@ This version is more portable and faster to test.
 - `matplotlib`
 - `scikit-learn`
 - `ipywidgets`
-- `openpyxl`
 
-> All dependencies are automatically installed if using Google Colab.
+> Automatically installed in Google Colab.
 
 ---
 
