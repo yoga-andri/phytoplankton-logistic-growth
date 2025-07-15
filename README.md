@@ -9,6 +9,7 @@ It is based on real experimental data collected during academic research and is 
 - Comparison with actual data from 6h, 12h, and 24h exposure
 - Error analysis using MAPE and automated interpretation to assess closeness to actual observations
 - Excel version of the model with editable input and automated logic
+- Alternative version using **inline data (no need to upload Excel)** – easy to run instantly
 
 ## 📁 Files Included
 - `phytoplankton_logistic_growth_model.ipynb` – Interactive Python notebook (Jupyter/Colab)
@@ -28,13 +29,21 @@ To **simulate or run the model directly in Excel**, please go to the sheet:
 > Only this sheet is intended for user interaction. Other sheets are used for reference or fixed data.
 
 ## ⚙️ How to Use (Python Version)
+
+### ▶️ Option A — With Excel Upload
 1. Open the notebook in [Google Colab](https://colab.research.google.com/github/yoga-andri/phytoplankton-logistic-growth/blob/main/phytoplankton_logistic_growth_model.ipynb)
 2. Upload the Excel file when prompted (`logistic-growth-model-fitoplankton.xlsm`)
 3. Use the slider to select light exposure duration (6 to 24 hours)
 4. The notebook will:
- - Display the logistic growth curve
- - Calculate prediction error (MAPE) for 6h, 12h, and 24h
- - Automatically interpret which actual exposure the result is closest to
+   - Display the logistic growth curve
+   - Show error values (MAPE) between prediction vs actual 6h, 12h, and 24h
+   - Provide automatic interpretation of which duration the result is closest to
+
+### ⚡ Option B — Without Excel (Instant Run)
+You can also try the version that uses inline data directly in the code — no need to upload Excel.  
+This version is more portable and faster to test.
+
+---
 
 ## 🔧 Dependencies
 - `numpy`
@@ -44,7 +53,9 @@ To **simulate or run the model directly in Excel**, please go to the sheet:
 - `ipywidgets`
 - `openpyxl`
 
-> These will be automatically installed if using Google Colab.
+> All dependencies are automatically installed if using Google Colab.
+
+---
 
 ## 🧪 Context
 This modeling project was inspired by a study on the **influence of light duration on phytoplankton growth**, using logistic regression techniques.  
@@ -54,4 +65,3 @@ It was developed during an undergraduate research project in Mathematics, with d
 **Yoga Andriyanto**  
 Mathematics Graduate – Interested in data, analysis, and modeling  
 📬 Open to data-related roles and collaboration opportunities.
-
